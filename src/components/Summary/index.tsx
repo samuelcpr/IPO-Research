@@ -36,7 +36,7 @@ export function Summary() {
       <div>
         <header>
           <p>Candidato1</p>
-          <img src={incomeImg} alt="Entradas" />
+          {/* <img src={incomeImg} alt="Entradas" /> */}
         </header>
         <strong>
           {new Intl.NumberFormat('pt-BR', {
@@ -50,7 +50,7 @@ export function Summary() {
       <div>
         <header>
           <p>Candidato2</p>
-          <img src={outcomeImg} alt="Saidas" />
+          {/* <img src={outcomeImg} alt="Saidas" /> */}
         </header>
         <strong>
           {new Intl.NumberFormat('pt-BR', {
@@ -64,7 +64,7 @@ export function Summary() {
       <div className='heighlight-background '>
         <header>
           <p>Candidato3</p>
-          <img src={totalImg} alt="Total" />
+          {/* <img src={totalImg} alt="Total" /> */}
         </header>
 
         <strong>
@@ -74,7 +74,6 @@ export function Summary() {
           }).format(summary.deposit2)}
         </strong>
       </div>
-
 
     </Container>
   )

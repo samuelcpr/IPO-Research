@@ -25,6 +25,9 @@ export function TransactionsTable() {
               <td>{transaction.category}
               </td>
 
+              <td>{transaction.category}
+              </td>
+
               <td>{transaction.formattedDate}</td>
             </tr>
           ))}

@@ -53,8 +53,7 @@ export function NewTransactionModal({
       <button
         type="button"
         onClick={onRequestClose}
-        className="react-modal-close"
-      >
+        className="react-modal-close">
         <img src={closeImg} alt="Fechar modal" />
       </button>
 
@@ -65,17 +64,25 @@ export function NewTransactionModal({
           value={title}
           onChange={e => setTitle(e.target.value)}
           type="text"
-          placeholder="Título"
+          placeholder="Digite aqui..."
         />
+
+        <input
+          value={title2}
+          onChange={e => setTitle2(e.target.value)}
+          type="text"
+          placeholder="Digite aqui..."
+        />
+
         <input
           type="number"
-          placeholder="Valor"
+          placeholder="Digite aqui..."
           value={amount}
           onChange={e => setAmount(Number(e.target.value))}
         />
         <input
           type="text"
-          placeholder="Categoria"
+          placeholder="Digite aqui..."
           value={category}
           onChange={e => setCategory(e.target.value)}
         />
@@ -87,8 +94,8 @@ export function NewTransactionModal({
             isActive={type === 'deposit'}
             activeColor="green"
           >
-            <img src={incomeImg} alt="Entrada" />
-            <span>Entrada</span>
+            {/* <img src={incomeImg} alt="Entrada" /> */}
+            <span>Candidato1</span>
           </RadioBox>
 
           <RadioBox
@@ -97,8 +104,8 @@ export function NewTransactionModal({
             isActive={type === 'deposit2'}
             activeColor="green"
           >
-            <img src={outcomeImg} alt="Saída" />
-            <span>Saída</span>
+            {/* <img src={outcomeImg} alt="Saída" /> */}
+            <span>Candidato2</span>
           </RadioBox>
           <RadioBox
             type="button"
@@ -106,8 +113,8 @@ export function NewTransactionModal({
             isActive={type === 'withdraw'}
             activeColor="green"
           >
-            <img src={outcomeImg} alt="Saída" />
-            <span>Saída</span>
+            {/* <img src={outcomeImg} alt="Saída" /> */}
+            <span>Candidato3</span>
           </RadioBox>
 
         </TransactionTypeContainer>
