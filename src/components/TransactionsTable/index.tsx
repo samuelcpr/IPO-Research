@@ -29,9 +29,6 @@ export function TransactionsTable() {
                 {transaction.amount}
               </td>
 
-              {/* <td>{transaction.category}
-              </td> */}
-
               <td>{transaction.category}
               </td>
 
