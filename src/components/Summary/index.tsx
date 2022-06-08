@@ -12,15 +12,21 @@ export function Summary() {
   const summary = transactions.reduce((acc, transaction) => {
     if (transaction.type === 'deposit') {
       acc.deposits += transaction.amount
-      acc.total += transaction.amount;
-    } else {
-      acc.withdraws += transaction.amount
-      acc.total -= transaction.amount;
+      // acc.total += transaction.amount;
     }
-    
+    else if (transaction.type === 'deposit2') {
+      acc.deposit2 += transaction.amount
+      // acc.deposit2 += transaction.amount;
+    }
+    else {
+      acc.withdraws += transaction.amount
+      // acc.total += transaction.amount;
+    }
+
     return acc;
   }, {
     deposits: 0,
+    deposit2: 0,
     withdraws: 0,
     total: 0
   })
@@ -30,7 +36,7 @@ export function Summary() {
       <div>
         <header>
           <p>Entradas</p>
-          <img src={incomeImg} alt="Entradas"/>
+          <img src={incomeImg} alt="Entradas" />
         </header>
         <strong>
           {formatValue(summary.deposits)}
@@ -39,7 +45,7 @@ export function Summary() {
       <div>
         <header>
           <p>Saídas</p>
-          <img src={outcomeImg} alt="Saídas"/>
+          <img src={outcomeImg} alt="Saídas" />
         </header>
         <strong>
           -
@@ -49,13 +55,13 @@ export function Summary() {
       <div className="highlight-background">
         <header>
           <p>Total</p>
-          <img src={totalImg} alt="Total"/>
+          <img src={totalImg} alt="Total" />
         </header>
         <strong>
-          {formatValue(summary.total)}
+          {formatValue(summary.deposit2)}
         </strong>
       </div>
-      
+
     </Container>
   )
 }

@@ -17,6 +17,7 @@ interface Transaction {
 
 interface TransactionInput {
   title: string;
+  title2: string
   amount: number;
   category: string;
   type: string;
@@ -38,7 +39,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
   useEffect(() => {
     api.get('/transactions')
-      .then(response => 
+      .then(response =>
         setTransactions(
           response.data.transactions.map((transaction: Transaction) => ({
             ...transaction,
@@ -51,7 +52,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
   async function createTransaction(transactionInput: TransactionInput) {
     const response = await api.post('/transactions', {
-      ...transactionInput, 
+      ...transactionInput,
       createdAt: new Date()
     });
 
@@ -65,7 +66,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
   }
 
   return (
-    <TransactionsContext.Provider value={{transactions, createTransaction}}>
+    <TransactionsContext.Provider value={{ transactions, createTransaction }}>
       {children}
     </TransactionsContext.Provider>
   )
