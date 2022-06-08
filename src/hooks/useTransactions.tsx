@@ -10,7 +10,7 @@ interface Transaction {
   category: string;
   type: string;
   amount: number;
-  formattedValue: number;
+  // formattedValue: number;
   formattedDate: string;
   createdAt: string;
 }

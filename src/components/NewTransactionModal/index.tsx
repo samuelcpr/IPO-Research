@@ -58,7 +58,7 @@ export function NewTransactionModal({
       </button>
 
       <Container onSubmit={handleCreateNewTransaction}>
-        <h2>Cadastrar transação</h2>
+        <h2>Cadastro de Voto</h2>
         <p>Como voce avalia o governo <br />
           Atual: BOM, RUIN, REGULAR.</p>
         <input
@@ -92,8 +92,7 @@ export function NewTransactionModal({
         />
 
         <TransactionTypeContainer>
-          <p>Se as eleições fosse Hoje <br />
-            Em quem voce votaria ?</p>
+          <p>Se as eleições fosse Hoje Em quem voce votaria ?</p> <br />
           <RadioBox
             type="button"
             onClick={() => setType('deposit')}

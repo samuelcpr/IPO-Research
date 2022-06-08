@@ -12,15 +12,17 @@ export function Summary() {
   const summary = transactions.reduce((acc, transaction) => {
     if (transaction.type === 'deposit') {
       acc.deposits += transaction.amount
-      // acc.total += transaction.amount;
+      acc.total += transaction.amount;
     }
     else if (transaction.type === 'deposit2') {
       acc.deposit2 += transaction.amount
-      // acc.deposit2 += transaction.amount;
+      acc.total += transaction.amount;
     }
+
+
     else {
       acc.withdraws += transaction.amount
-      // acc.total += transaction.amount;
+      acc.total += transaction.amount;
     }
 
     return acc;
@@ -74,6 +76,21 @@ export function Summary() {
           }).format(summary.deposit2)}
         </strong>
       </div>
+
+      <div className='heighlight-background '>
+        <header>
+          <p>Total de Entrevistados</p>
+          {/* <img src={totalImg} alt="Total" /> */}
+        </header>
+
+        <strong>
+          {new Intl.NumberFormat('pt-BR', {
+            // style: 'currency',
+            // currency: 'BRL'
+          }).format(summary.total)}
+        </strong>
+      </div>
+
 
     </Container>
   )

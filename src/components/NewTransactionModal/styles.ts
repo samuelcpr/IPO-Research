@@ -26,7 +26,7 @@ export const Container = styled.form`
     border-radius: 0.25rem;
 
     border: 1px solid #d7d7d7;
-    background: #e7e9ee;
+    background: #fff;
     
     font-weight: 400;
     font-size: 1rem;

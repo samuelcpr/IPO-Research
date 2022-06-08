@@ -26,7 +26,8 @@ export function TransactionsTable() {
               <td>{transaction.title}</td>
 
               <td className={transaction.type}>
-                {transaction.formattedValue}</td>
+                {transaction.amount}
+              </td>
 
               {/* <td>{transaction.category}
               </td> */}
