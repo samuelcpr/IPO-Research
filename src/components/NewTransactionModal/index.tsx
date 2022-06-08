@@ -59,27 +59,31 @@ export function NewTransactionModal({
 
       <Container onSubmit={handleCreateNewTransaction}>
         <h2>Cadastrar transação</h2>
-
+        <p>Como voce avalia o governo <br />
+          Atual: BOM, RUIN, REGULAR.</p>
         <input
           value={title}
           onChange={e => setTitle(e.target.value)}
           type="text"
           placeholder="Digite aqui..."
         />
-
+        <p>Como voce avalia a infraestrutura <br />
+          da cidade.
+        </p>
         <input
           value={title2}
           onChange={e => setTitle2(e.target.value)}
           type="text"
           placeholder="Digite aqui..."
         />
-
+        <p>Quantidade de intrevistado</p>
         <input
           type="number"
           placeholder="Digite aqui..."
           value={amount}
           onChange={e => setAmount(Number(e.target.value))}
         />
+        <p>Como voce avalia os vereadores</p>
         <input
           type="text"
           placeholder="Digite aqui..."
@@ -88,6 +92,8 @@ export function NewTransactionModal({
         />
 
         <TransactionTypeContainer>
+          <p>Se as eleições fosse Hoje <br />
+            Em quem voce votaria ?</p>
           <RadioBox
             type="button"
             onClick={() => setType('deposit')}

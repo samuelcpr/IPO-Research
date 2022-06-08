@@ -18,7 +18,7 @@ createServer({
         //   title: 'Freelance de Website',
         //   type: 'deposit',
         //   category: 'Dev',
-        //   amount: '',
+        //   amount: '500',
         //   createdAt: new Date('2021-02-12 09:00:00')
         // },
         // {
@@ -26,7 +26,7 @@ createServer({
         //   title: 'Aluguel',
         //   type: 'withdraw',
         //   category: 'Casa',
-        //   amount: '',
+        //   amount: '500',
         //   createdAt: new Date('2021-02-14 11:00:00')
         // },
         // {
@@ -34,7 +34,7 @@ createServer({
         //   title: 'Aluguel',
         //   type: 'withdraw',
         //   category: 'Casa',
-        //   amount: '',
+        //   amount: '500',
         //   createdAt: new Date('2021-02-14 11:00:00')
         // },
       ]

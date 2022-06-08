@@ -9,21 +9,27 @@ export function TransactionsTable() {
       <table>
         <thead>
           <tr>
-            <th>Título</th>
-            <th>Valor</th>
-            <th>Categoria</th>
+            <th>Como voce avalia o governo <br />
+              Atual: BOM, RUIN, REGULAR.
+            </th>
+            <th>Quantidade de intrevistado</th>
+            <th>Se as eleições fosse Hoje <br />
+              Em quem voce votaria ?
+            </th>
             <th>Data</th>
           </tr>
         </thead>
         <tbody>
           {transactions.map(transaction => (
             <tr key={transaction.id}>
+
               <td>{transaction.title}</td>
+
               <td className={transaction.type}>
                 {transaction.formattedValue}</td>
 
-              <td>{transaction.category}
-              </td>
+              {/* <td>{transaction.category}
+              </td> */}
 
               <td>{transaction.category}
               </td>

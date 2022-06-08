@@ -8,7 +8,7 @@ export const Container = styled.div`
     border-spacing: 0 0.5rem;
 
     th {
-      color: var(--text-body);
+      color:#000;
       font-weight: 400;
       padding: 1rem 2rem;
       text-align: left;
@@ -17,13 +17,13 @@ export const Container = styled.div`
 
     td {
       padding: 1rem 2rem;
-      border: 0;
-      background: var(--shape);
-      color: var(--text-body);
+      border: solid 1px #000000;
+      background-color: #4F4F4F;
+      color: #fff;
       border-radius: 0.25rem;
 
       &:first-child {
-        color: var(--text-title);
+        color: #fff;
       }
 
       &.deposit {
@@ -33,6 +33,8 @@ export const Container = styled.div`
       &.withdraw {
         color: var(--red);
       }
+
+    
     }
   }
 `;
