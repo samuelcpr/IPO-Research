@@ -37,7 +37,7 @@ export function Summary() {
     <Container>
       <div>
         <header>
-          <p>Candidato1</p>
+          <p>Bolsonaro</p>
           {/* <img src={incomeImg} alt="Entradas" /> */}
         </header>
         <strong>
@@ -51,7 +51,7 @@ export function Summary() {
 
       <div>
         <header>
-          <p>Candidato2</p>
+          <p>Simone tébte</p>
           {/* <img src={outcomeImg} alt="Saidas" /> */}
         </header>
         <strong>
@@ -65,7 +65,7 @@ export function Summary() {
 
       <div className='heighlight-background '>
         <header>
-          <p>Candidato3</p>
+          <p>Lula</p>
           {/* <img src={totalImg} alt="Total" /> */}
         </header>
 
