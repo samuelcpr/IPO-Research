@@ -100,7 +100,7 @@ export function NewTransactionModal({
             activeColor="green"
           >
             {/* <img src={incomeImg} alt="Entrada" /> */}
-            <span>Candidato1</span>
+            <span>Bolsonaro</span>
           </RadioBox>
 
           <RadioBox
@@ -110,7 +110,7 @@ export function NewTransactionModal({
             activeColor="green"
           >
             {/* <img src={outcomeImg} alt="Saída" /> */}
-            <span>Candidato2</span>
+            <span>Lula</span>
           </RadioBox>
           <RadioBox
             type="button"
@@ -119,7 +119,7 @@ export function NewTransactionModal({
             activeColor="green"
           >
             {/* <img src={outcomeImg} alt="Saída" /> */}
-            <span>Candidato3</span>
+            <span>Simone tébte</span>
           </RadioBox>
 
         </TransactionTypeContainer>
