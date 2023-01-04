@@ -83,7 +83,7 @@ export function NewTransactionModal({
           value={amount}
           onChange={e => setAmount(Number(e.target.value))}
         />
-        <p>Como voce avalia os vereadores</p>
+        <p>Se as eleições fosse Hoje Em quem voce votaria </p>
         <input
           type="text"
           placeholder="Digite aqui..."
